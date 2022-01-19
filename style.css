@@ -1,0 +1,337 @@
+body{
+   background:;
+   font-family: 'Montserrat', sans-serif;
+
+			
+}
+
+header{
+    background: #BBBBBB;
+    padding: 20px 0;
+    box-shadow: 10px 10px 30px #000000; /*acrescenta sombra abaixo do header*/
+    
+
+
+     /*background: #4F4F4F;
+     width: 100%;
+     padding: 20px;*/				    
+}
+
+.caixa{
+      position: relative;
+	  width: 940px; 
+	  margin: 0 auto;
+	  /*padding: 0 0; estava assim, mas precisei depurar para achar o erro no posicionamento do texto e imagem
+*/ 
+}
+
+nav{
+	position: absolute;
+	top: 110px;
+	right: 0;
+
+
+}
+nav li {
+	display: inline;
+	margin:  0 0 0 15px;
+
+
+}
+
+nav a {
+	text-transform: uppercase;
+	color:  #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none; /*Tira a decoração padrão*/
+
+}
+
+nav a:hover{
+	      color:  #c78c19; 
+		  text-decoration: underline;
+}
+
+.produtos{
+	     width: 940px;
+		 margin: 0 auto ;
+		 padding: 50px 0;
+}
+
+.produtos li{
+		    display: inline-block;
+		    text-align: center;
+			width: 30%;
+		    vertical-align: text-top;
+		    margin: 0 1.5%;
+		    padding: 30px 20px ;
+		    box-sizing: border-box;
+			border-color: "000000" ;
+			border-width: 5px;
+			border-style: solid ;
+			 /*border:  2px solid #000000; (Maneira de declarar borda no css, tudo unificado)*/
+			border-radius: 20px;
+}
+
+.produtos li:hover {
+				border-color: #c78c19 ;
+					     
+}
+
+/*Quando queremos um comportamento ativo no produtos li*/
+
+.produtos li:active {
+				    border-color: #088C19;    
+}
+
+.produtos li:hover h2 {
+				      font-size: 36px;
+}/*Implica dizer que quando o mouse estiver dentro dessa estrutura, o Li terá o tamanho de 40 px*/
+
+.produtos h2{
+		    font-size: 30px;
+			font-weight: bold;
+			padding: 20px;
+			margin: 10px 0 0;
+
+
+
+			
+}
+
+.produto-descricao{
+	     font-size: 18px;
+				  
+}
+
+footer {
+    text-align: center;
+    background: url("bg.jpeg");
+    padding: 40px 0;  /*padding: 20px;*/
+}
+
+.feitocomamor{
+       color:  #000000;
+       font-size: 13px;
+       font-weight: bold;
+
+}
+
+form{
+	margin: 40px 40px;
+}
+
+
+form label, form legend{
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+.input-padrao{
+     display: block;
+     margin: 0 0 20px;
+     padding: 10px 25px;
+     width: 50%;
+     border:2px solid #dadada;  /*esse parâmetro  "border" arredonda a borda e deixa ela cinza*/
+     border-radius: 20px; /*arredonda o campo de texto*/
+ }
+
+ .textarea{
+
+ 	border: 2px solid #dadada; /*esse parâmetro  "border" arredonda a borda e deixa ela cinza*/
+    border-radius: 20px;
+
+     }
+
+.checkbox{
+     	margin: 50px 0;
+}
+
+.enviar{
+    width: 40%;/* aumenta a largura do botão*/
+	background: orangered;
+	padding: 20px 0;      /*aumenta o botão de enviar*/
+	border-radius: 20px;
+	color: white;
+	font-weight:bold ;
+	font-size: 18px;
+	transition: 1s all ;
+	cursor: pointer;
+}
+
+.enviar:hover {
+      background: cadetblue;
+      transform: scale(1.2);
+
+
+} 
+
+
+/*css da página inicial*/
+
+.banner{
+    width: 100%;
+
+}
+
+.titulo-principal {
+	text-align: center;
+	font-size: 2em ;
+	margin: 0 0 1em;
+	clear:left ;	         
+}
+
+.titulo-principal:first-letter /*aumenta a primeira letra do título */{
+	font-weight: bold;
+	font-size: 40px;
+}
+
+
+.principal{
+	padding:3em 0;
+	background:#FEFEFE;
+	
+    background: linear-gradient(#FEFEFE, #888888);
+
+}
+
+.principal p {
+	margin: 0 0 1em;
+	line-height: 1.5; /*coloquei para aumentar o espaçamento das linhas do texto*/
+
+
+}
+
+.principal strong{
+          font-weight: bold;
+
+
+}
+
+.principal em{
+           font-style: italic;
+
+
+}
+
+.trabalhoequipe{        /* Referente a imagem de:  Sobre a code data  - - -  - .utensilios*/
+	     width:400px ;
+	     float:left ;
+	     margin: 0 20px 20px 0;      /* ORDEM DAS POSIÇÕES PX:  Em cima, direita embaixo, esquerda*/
+	     /*   box-shadow: 10px 10px 30px #000000; - - - - coloca sompbra na imagem*/
+}
+
+.beneficios {
+    padding: 3em 0;
+    background:#888888;
+    /* retirei  -   width: 940px;
+                    margin: 0 auto;*/
+}
+
+.conteudo-beneficios{
+	width: 640px;
+	margin: 0 auto;
+
+}
+
+.lista-beneficios{
+	width: 60%;
+	display:inline-block ;
+	vertical-align: top;
+}
+
+
+
+.itens{
+     line-height: 1.5; /*  a sugestão era de 1.5*/
+
+}
+
+.itens:last-child /*usamos o ".itens:nth-child(2) " Pseudoelementos -  quando queremos deixar em negrito uma determinada linha da lista*/  {
+    font-weight: bold; /* se você usar: .itens:nth-child(2n); colocando o "n" após o número, ele negrita de dois em dois e assim sucesivamente*/
+}
+
+.itens:before{
+	content: "★ ";/*adiciona simbolos unicode antes do item de cada lista*/
+}
+
+.imagem-beneficios /*estava somente ".beneficios - alterei para ver se corrige o problema*/{
+          width: 40%;
+          margin: 2em auto; /*margem para a imagem não colar no footer*/
+          /*  border-radius: 40px  - - - desnecessário para a imagem da lampada*/
+}
+
+
+
+/* ADAPTANDO A PÁGINA DO SITE PARA VISUALIZAÇÃO EM UMA TELA DE CELULAR*/
+
+@media screen and (max-width: 480px) {
+
+	.caixa, .pricipal, .conteudo-beneficios{
+		width: auto;
+	}
+
+	h1 {
+       text-align: center;
+	}
+
+	nav{
+		position:static ;
+	}
+
+	.lista-beneficios, .imagem-beneficios{
+		 width: 100%;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+/*table{                Deixei essa parte em comentário, porque não quero tabela no meu site
+	margin: 20px 0 40px;
+}
+
+thead{
+	background: #555555;
+	color: white;
+	font-weight:bold ;
+}
+
+td, th{
+
+  border: 1px solid #000000;
+  padding: 8px 15px ;	
+}*/
+
+
+
+     
+
+
+
+    /* outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;     ( deixa as bordas com brilho) */
+ 
+
+
+
+    
+
+
+
+    
+
+
+     
+
+
