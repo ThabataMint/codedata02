@@ -1,0 +1,100 @@
+        
+
+
+        body{
+
+        	background: #d9b2b2;
+
+			
+		}
+
+		#banner{
+
+			width: 100%;
+
+
+		}
+
+		.principal{
+
+			padding: 30px;
+
+		}
+
+		h1{
+
+			text-align: center;
+			
+
+		}
+		
+		p {
+			text-align:center;
+
+
+		}
+
+		
+
+		#missao{
+			style= font-size: 20px;
+		}
+
+		em strong{
+
+			color: orangered;
+		}
+
+		.itens{
+
+			font-style: italic;
+		}
+
+		.diferencial{
+
+			background: #696969;
+			padding: 20px;
+			
+		}
+
+		.button{
+			color: #FFF;
+    background-color: orangered;
+    border: none;
+    height: 60px;
+    line-height: 30px;
+    padding: 0 100px;
+    text-transform: uppercase;
+    font-weight: bold;
+    /*cursor: pointer ; (Resolvi tirar o cursor pointer porque não tem ação no botão)*/
+    border-radius: 40px;
+
+		}
+		.button: hover{
+			transform: scale(1.05);
+
+		}
+
+		h2 {
+			text-align: center;
+		}
+
+
+         ul{
+            display: inline-block;
+            vertical-align: top;
+            width: 20%;
+            margin-right: 15%;
+         }
+
+		.fale{
+			width: 50%;
+			border-radius: 40px;
+
+		}
+
+
+
+
+
+
