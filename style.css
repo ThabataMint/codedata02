@@ -22,19 +22,23 @@ header{
 	  width: 940px; 
 	  margin: 0 auto;
 	  /*padding: 0 0; estava assim, mas precisei depurar para achar o erro no posicionamento do texto e imagem
-*/ 
+*/    /*sExperimentando, se zuar o site,  eu tiro   box-shadow: 10px 10px 20px 5px #000000;*/
+	  border-radius: 60%;
+	  box-shadow: 10px 10px 30px #000000;
 }
 
 nav{
 	position: absolute;
-	top: 110px;
+	top: 90px;
 	right: 0;
+	padding: 30px;
 
 
 }
 nav li {
 	display: inline;
 	margin:  0 0 0 15px;
+	padding: 20px;
 
 
 }
@@ -49,7 +53,7 @@ nav a {
 }
 
 nav a:hover{
-	      color:  #c78c19; 
+	      color:  #FF4500; 
 		  text-decoration: underline;
 }
 
@@ -75,7 +79,7 @@ nav a:hover{
 }
 
 .produtos li:hover {
-				border-color: #c78c19 ;
+				border-color: #FF4500 ;
 					     
 }
 
@@ -132,9 +136,9 @@ form label, form legend{
 .input-padrao{
      display: block;
      margin: 0 0 20px;
-     padding: 10px 25px;
+     padding: 10px 15px;
      width: 50%;
-     border:2px solid #dadada;  /*esse parâmetro  "border" arredonda a borda e deixa ela cinza*/
+     border:2px solid #FF4500;  /*esse parâmetro  "border" arredonda a borda e deixa ela cinza*/
      border-radius: 20px; /*arredonda o campo de texto*/
  }
 
@@ -143,27 +147,29 @@ form label, form legend{
  	border: 2px solid #dadada; /*esse parâmetro  "border" arredonda a borda e deixa ela cinza*/
     border-radius: 20px;
 
-     }
+ }
 
 .checkbox{
      	margin: 50px 0;
 }
 
 .enviar{
-    width: 40%;/* aumenta a largura do botão*/
+    width: 30%;/* aumenta a largura do botão*/
 	background: orangered;
 	padding: 20px 0;      /*aumenta o botão de enviar*/
-	border-radius: 20px;
+	border-radius: 30px;
 	color: white;
 	font-weight:bold ;
 	font-size: 18px;
 	transition: 1s all ;
 	cursor: pointer;
+	border-color: red;
 }
 
 .enviar:hover {
-      background: cadetblue;
+      background: #FF8C00;
       transform: scale(1.2);
+      box-shadow: 10px 10px 30px #000000;
 
 
 } 
@@ -191,9 +197,9 @@ form label, form legend{
 
 .principal{
 	padding:3em 0;
-	background:#FEFEFE;
 	
-    background: linear-gradient(#FEFEFE, #888888);
+	background:#FEFEFE;
+	background: linear-gradient(#FEFEFE, #888888);
 
 }
 
@@ -218,10 +224,14 @@ form label, form legend{
 
 .trabalhoequipe{        /* Referente a imagem de:  Sobre a code data  - - -  - .utensilios*/
 	     width:400px ;
-	     float:left ;
+	     float:left; 
 	     margin: 0 20px 20px 0;      /* ORDEM DAS POSIÇÕES PX:  Em cima, direita embaixo, esquerda*/
 	     /*   box-shadow: 10px 10px 30px #000000; - - - - coloca sompbra na imagem*/
 }
+
+
+
+
 
 .beneficios {
     padding: 3em 0;
@@ -231,8 +241,9 @@ form label, form legend{
 }
 
 .conteudo-beneficios{
-	width: 640px;
+	width: 700px;  /* mudei de 640px para 700px*/
 	margin: 0 auto;
+	padding: 70px; /* eu naõ tinha colocado padding para espaçar o título da lista, mas resolvi colocar:  Por que é tão...*/
 
 }
 
@@ -290,6 +301,31 @@ form label, form legend{
 
 
 
+/* Preciso deixar a página de produtos e contato responsiva*/
+
+/*.caixa, .produtos {
+	width: auto;
+}
+
+h1{
+	text-align: center;
+}
+
+nav{
+	position: static;
+}
+h2{
+	text-align: center;
+}
+
+.produtos, .produtos li, .produtos li:hover h2,.produtos li:active, .produtos h2, .produto-descricao {
+	width: 100%;
+}
+*/
+
+
+
+
 
 
 
@@ -322,6 +358,17 @@ td, th{
     border-color: #9ecaed;
     box-shadow: 0 0 10px #9ecaed;     ( deixa as bordas com brilho) */
  
+
+
+
+    
+
+
+
+    
+
+
+     
 
 
 
