@@ -1,5 +1,5 @@
 body{
-   background:;
+   /*background:;*/
    font-family: 'Montserrat', sans-serif;
 
 			
@@ -111,7 +111,7 @@ nav a:hover{
 
 footer {
     text-align: center;
-    background: url("bg.jpeg");
+    background: url("imagem/bg.jpeg");
     padding: 40px 0;  /*padding: 20px;*/
 }
 
